@@ -1,2 +1,29 @@
 <h1>Products#edit</h1>
 <p>Find me in app/views/products/edit.html.erb</p>
+
+
+<h1>Edit Product</h1>
+
+<p>
+	<%= link_to "Back", @product %>
+</p>
+
+<%= form_for @products do |f| %>
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :description %>
+		<%= f.text_are :description %>
+	</p>
+	<p>
+		<%= f.label :price_in_cents %><br>
+		<%= f.number price_in_cents %>
+	</p>
+	<p>
+		<%= submit_tag "Save" %>
+	</p>
+<% end %>
+
+

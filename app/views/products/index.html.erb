@@ -1,12 +1,10 @@
 <h1>Products#index</h1>
 <p>Find me in app/views/products/index.html.erb</p>
-<%= link_to 'Add a New Product', 'products/new' %>
+<%= link_to 'Become a User', 'users/new' %>
+<%= link_to 'Login', 'sessions/new' %>
+<%= link_to 'See our Products', 'products/show' %>
 
 
 
-<% @products.each do |product| %>
-<p><%= product.id %>. <%= product.name %>, <%= product.formatted_price %></p>
-<%= product.description %>
-<% end %>
 
 
